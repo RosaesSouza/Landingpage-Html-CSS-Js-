@@ -1,0 +1,200 @@
+body 
+{
+    background-image: url(assets/background.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'TT Wellingtons', Arial, sans-serif;
+    color: #333;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+font-family: 'Akzidenz Grotesk Black';
+font-style: normal;
+font-weight: normal;
+src: local('Akzidenz Grotesk Black'), url('assets/fonts/Akzidenz-grotesk-black.woff') format('woff');
+}
+
+@font-face {
+font-family: 'TT Wellingtons';
+font-style: normal;
+font-weight: 400;
+src: url('assets/fonts/TT-Wellingtons-Trial-Regular-BF640168d2a063b.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'TT Wellingtons';
+font-style: normal;
+font-weight: 700;
+src: url('assets/fonts/TT-Wellingtons-Trial-Bold-BF640168d3405c8.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'TT Wellingtons';
+font-style: normal;
+font-weight: 900;
+src: url('assets/fonts/TT-Wellingtons-Trial-Black-BF640168d3318b3.otf') format('opentype');
+}
+
+.navbar 
+{
+    background-color: rgb(50, 0, 56, 0.5);
+    color: white;
+    font-family: 'TT Wellingtons', Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 18px;
+    padding: 15px 0px 15px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.menu
+{
+    width: 50%;
+    left: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner
+{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.banner img
+{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: rgb(135, 37, 191, 0.5) 0px 8px, rgb(103, 66, 188, 0.4) 0px 16px, rgb(72, 81, 168, 0.3) 0px 24px, rgb(37, 98, 161, 0.2) 0px 32px, rgb(1, 130, 161, 0.05) 0px 40px;
+}
+
+.date-container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.save-the-date
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-text
+{
+    color: rgb(50, 0, 56, 0.5);
+    position: relative;
+    font-family: 'Akzidenz Grotesk Black';
+    font-size: 180px;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+    line-height: .7;
+    letter-spacing: -25px;
+    z-index: -1;
+}
+
+.box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgb(50, 0, 56);
+    font-family: 'Akzidenz Grotesk Black';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    z-index: 1;
+    min-width: 300px;
+}
+
+.box h1
+{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+}
+
+.box h2
+{
+    font-size: 23px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.box p
+{
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 800;    
+}
+
+
+.timer
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 20px;
+    color: rgb(50, 0, 56);
+}
+
+.timer p
+{    
+    font-family: 'Akzidenz Grotesk Black';
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    margin-left: auto;
+}
+
+.timer h2
+{    
+    font-size: 30px;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timer h1
+{    
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    min-height: 60px;
+}
